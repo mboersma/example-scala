@@ -3,13 +3,13 @@ import com.typesafe.sbt.SbtNativePackager._
 packageArchetype.java_application
 name := "example-scala"
 organization := "com.example"
-version := "2.0.0"
-scalaVersion := "2.11.8"
+version := "2.0.1"
+scalaVersion := "2.12.0"
 fork in run := true
 parallelExecution in ThisBuild := false
 
 lazy val versions = new {
-  val finatra = "2.3.0"
+  val finatra = "2.5.0"
   val logback = "1.1.7"
 }
 
